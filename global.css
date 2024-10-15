@@ -1,34 +1,22 @@
-.button {
-  position: relative;
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
   background-color: blue;
   border: none;
-  font-size: 28px;
-  color: white;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 9px gray;
 }
 
-.button:after {
-  content: "";
-  background: gray;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
+button:hover {background-color: dark-blue;}
 
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
+button:active {
+  background-color: dark-blue;
+  box-shadow: 0 5px gray;
+  transform: translateY(4px);
 }
