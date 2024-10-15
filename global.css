@@ -13,6 +13,6 @@ button {
 }
 
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: TimesNewRoman;
+  src: url(Times-New-Roman-Subsetted.woff);
 }
