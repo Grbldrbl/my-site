@@ -1,18 +1,34 @@
-button {
+.button {
+  position: relative;
   background-color: blue;
   border: none;
+  font-size: 28px;
   color: white;
-  padding: 15px 32px;
-  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
   text-align: center;
+  transition-duration: 0.4s;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  opacity: 0.6;
-  cursor: not-allowed;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-@font-face {
-  font-family: TimesNewRoman;
-  src: url(Times-New-Roman-Subsetted.woff);
+.button:after {
+  content: "";
+  background: gray;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
